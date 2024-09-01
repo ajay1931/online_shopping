@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    color: black;
+    padding: 15px;
+    top: 0%;
+    position: sticky;
+    z-index: 2000;
+}
+.header_left{
+    flex: .3;
+    text-align: center;
+}
+.header_center{
+    display: flex;
+    flex: .5;
+    align-items: center;
+    justify-content: center;
+}
+.header_center input{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.header_center button{
+    padding: 4px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.header_right{
+    display: flex;
+    flex: .2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.header_right button{
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart_count{
+    padding: 3px;
+    color:red;
+    font-weight: bold;
+}
