@@ -1,51 +1,80 @@
-.header{
+.header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: cadetblue;
     color: black;
-    padding: 15px;
+    padding: 20px;
     top: 0%;
     position: sticky;
     z-index: 2000;
 }
-.header_left{
+.header button:hover{
+    transform: scale(1.2);
+    letter-spacing: 1px;
+}
+
+.header_left {
     flex: .3;
     text-align: center;
 }
-.header_center{
+
+.header_center {
     display: flex;
-    flex: .5;
+    flex: 0.4;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
 }
-.header_center input{
-    padding: 5px;
+
+.header_center input {
+    padding: 10px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 444px; 
+    box-sizing: border-box; 
 }
-.header_center button{
-    padding: 4px;
-    border-radius: 5px;
-    margin: 5px;
+
+.header_center button {
+    padding: 11px 15px; 
+    border-radius: 2px;
+    border: none;
+    background: white;
     cursor: pointer;
-}
-.header_right{
+    font-size: 16px;
     display: flex;
-    flex: .2;
-    text-align: center;
-    justify-content: center;
     align-items: center;
 }
-.header_right button{
-    padding: 5px;
-    border-radius: 15px;
+
+.header_right {
+    display: flex;
+    flex: .3;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header_right button {
+    padding: 5px 10px; 
+    border-radius: 5px;
     margin: 5px;
     font-weight: bold;
     cursor: pointer;
+    background: transparent; 
+    border: 2px solid transparent; 
+    transition: background-color 0.3s, border-color 0.3s; 
 }
-.cart_count{
+
+.header_right button:hover {
+    background: white; 
+    border-color: cadetblue; 
+}
+
+.cart_count {
     padding: 3px;
-    color:red;
+    color: red;
     font-weight: bold;
 }
